@@ -8,11 +8,12 @@
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 
 \usepackage{comment} % Selectively include/excludes portions of text.
-\includecomment{software}  % Software Engineering
+\excludecomment{software}  % Software Engineering
 \excludecomment{controls}  % Controls or Robotics Engineering
 \excludecomment{telecom}  % Telecommunications and Digital Signal Processing
-\includecomment{tech}        % Technology or Engineering (Category)
+\excludecomment{tech}        % Technology or Engineering (Category)
 \excludecomment{educate} % Educational Innovator
+\includecomment{general}  % General Resume for connectors, executives, etc.
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -33,8 +34,21 @@
         (501) 337-8485 }
 
 \begin{resume} 
- 
+
+% Objective section for all except general
+\begin{software}
 \section{Objective}
+\end{software}
+\begin{controls}
+\section{Objective}
+\end{controls}
+\begin{telecom}
+\section{Objective}
+\end{telecom}
+\begin{educate}
+\section{Objective}
+\end{educate}
+
 \begin{software}
 Software Engineering
 \end{software}
@@ -71,7 +85,8 @@ Graduate concentration in Controls, Robotics, and Intelligent Systems, GPA 3.3
 \end{itemize}
 
 \section{Leadership  Activities} 
-     {\bf President,} Drexel Smart House, Philadelphia, PA \hfill 2009 -- 2011 
+     {\bf President,} Drexel Smart House, Philadelphia, PA \hfill 2009 -- 2011 \\
+     {\bf Vice President,} Drexel Smart House, Philadelphia, PA \hfill 2008 -- 2009
      \begin{itemize} \itemsep -2pt
      \item Led renovation effort to transform historic home into ``living laboratory'' for student research and technology development 
      \item Collaborated with faculty, staff, and industry to establish technology incubator
@@ -127,14 +142,22 @@ Subversion
 \begin{software}
      \underline{Libraries:} & Ant, CodeIgniter, Cucumber, jUnit, Rails, RSpec \\
 \end{software}
+% KEEP ^ v IN SYNC. Want to show on _both_ software and general
+\begin{general}
+     \underline{Libraries:} & Ant, CodeIgniter, Cucumber, jUnit, Rails, RSpec \\
+\end{general}
      \underline{Systems:} & Linux (Debian, Red Hat), Mac OS X, Windows \\
 \begin{telecom}
      \underline{Research:} & Arduino, Function Generator, Pencilbox Logic \\ & Designer, Roomba, Spartan3 FPGA, TIMS
 \end{telecom}
-% KEEP ^ v IN SYNC. Want to show on _both_ telecom and controls
+% KEEP ^ v IN SYNC. Want to show on _all_ telecom and controls and general
 \begin{controls}
      \underline{Research:} & Arduino, Function Generator, Pencilbox Logic \\ & Designer, Roomba, Spartan3 FPGA, TIMS
 \end{controls}
+% KEEP ^ v IN SYNC. Want to show on _all_ telecom and controls and general
+\begin{general}
+     \underline{Research:} & Arduino, Function Generator, Pencilbox Logic \\ & Designer, Roomba, Spartan3 FPGA, TIMS
+\end{general}
 \begin{software}
      \underline{Research:} & Arduino, Roomba, Spartan3 FPGA
 \end{software}
@@ -154,6 +177,17 @@ Subversion
 	\item Mentor, Science Leadership Academy high school ILP outreach program, 2008 
 	\end{list}
 \end{educate}
+% KEEP ^ v (mostly) IN SYNC. Want to show on _all_ telecom and controls and general
+\begin{general}
+\vspace{-3mm} \section{Service and Outreach}
+	\begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
+	\item Member, College of Engineering Dean Search Committee, 2010--Present
+	\item Sustainability Advisor, Freedom's Way Foundation in Ivyland, PA, 2009 -- 2010
+	\item Member, Organizing Committee, Revitalization Project for the Morton McMichael Elementary School in Mantua, Philadelphia, Fall 2009
+	\item Mentoring Organization, Lindy Inner-City Public School Program, 2009
+	\item Mentor, Science Leadership Academy high school ILP outreach program, 2008 
+	\end{list}
+\end{general}
 
 \begin{educate}
 % Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
@@ -195,6 +229,11 @@ Subversion
 \section{Certifications}
 Leadership in Energy and Environmental Design Accredited Professional (LEED AP)
 \end{educate}
+% KEEP ^ v IN SYNC. Want to show on _both_ educate and general
+\begin{general}
+\section{Certifications}
+Leadership in Energy and Environmental Design Accredited Professional (LEED AP)
+\end{general}
 
 \begin{educate}
 \section{Papers and Publications}
@@ -203,6 +242,15 @@ Leadership in Energy and Environmental Design Accredited Professional (LEED AP)
 \item D. Denick, J. Detweiler, C. Ray, A. Cebulski, J. Bhatt, ``Library-Smart House Collaboration for Information Literacy Development,'' American Society for Engineering Education Conference, Engineering Libraries Division, Austin, TX, June 14-17, 2009
 \end{list}
 \end{educate}
+% KEEP ^ v (mostly) IN SYNC. Want to show on _both_ educate and general
+\begin{general}
+\section{Press and Publications}
+\begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
+\item Interviewed by Avril David, ``A Smart House at Drexel University in Philadelphia is a Living Laboratory of Sustainability,'' Forbes CSR Blog, August 2010.
+\item Cody Ray, Kellie Houx, ``Drexel Smart House: Growing Strong'', Creative Outlook magazine, December 2009.
+\item D. Denick, J. Detweiler, C. Ray, A. Cebulski, J. Bhatt, ``Library-Smart House Collaboration for Information Literacy Development,'' American Society for Engineering Education Conference, Engineering Libraries Division, Austin, TX, June 14-17, 2009
+\end{list}
+\end{general}
 
 \begin{educate}
 \section{Media \\ Appearances}
@@ -235,6 +283,10 @@ Leadership in Energy and Environmental Design Accredited Professional (LEED AP)
 \begin{tech}
 \section{Selected \\ Technical \\ Projects}
 \end{tech}
+% KEEP ^ v IN SYNC. Want to show on _both_ tech and general
+\begin{general}
+\section{Selected \\ Technical \\ Projects}
+\end{general}
 
 \begin{tech}
 \begin{controls}
@@ -254,6 +306,23 @@ Model and Control DC-Driven Rotational-Prismatic (RP) Manipulator
 \end{itemize}
 \end{controls}
 \end{tech}
+% KEEP ^ v IN SYNC. Want to show on _both_ tech and general
+\begin{general}
+{\bf Robot Control,} ECES 690 ST: Robot Control \hfill Spring 2011 \\
+Model and Control DC-Driven Rotational-Prismatic (RP) Manipulator
+\begin{itemize} \itemsep -2pt %reduce space between items
+	\item Modeled RP manipulator in vertical plane including actuator dynamics
+	\item Verified dynamic robot model through MATLAB simulation 
+	\item Analyzed and compared seven control strategies for the task of drawing ``5''
+		\vspace{-2mm}
+		\begin{itemize} \itemsep -2pt %reduce space between items
+		\item Decentralized PID control in joint and operational spaces
+		\item Lyapunov control in joint and operational spaces
+		\item Globally linearizing control in joint and operational spaces
+		\item Adaptive control in joint space for two unknown parameters
+		\end{itemize} \vspace{-2mm}
+\end{itemize}
+\end{general}
 
 \begin{tech}
 {\bf Robot WiFi Localization,} CS 610 Advanced Artificial Intelligence \hfill Winter 2011 \\
@@ -310,15 +379,27 @@ Mailing list analytics tool to statistically gauge member engagement
 
 \begin{software}
  {\bf Mashbot Campaign Manager,} Computer Science Senior Design \hfill 2009 \\
-Extensible social media marketing campaign manager for 
+Extensible online social media marketing campaign manager for small businesses
  \begin{itemize} \itemsep -2pt  % reduce space between items
  \item Architected front-end system and contributed models and controllers
  \item Developed user and service API authentication systems (OAuth, user/pass, etc.)
  \item Implemented database watch daemon to push scheduled content for distribution
  \item Written in Ruby on Rails (front end), Ruby (middle), Java/Spring (back end)
- \item Finalist, Computer Science Design Competition
+ \item Finalist, Senior Design Competition
  \end{itemize}
 \end{software}
+% KEEP ^ v IN SYNC. Want to show on _both_ software and general
+\begin{general}
+ {\bf Mashbot Campaign Manager,} Computer Science Senior Design \hfill 2009 \\
+Extensible online social media marketing campaign manager for small businesses
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Architected front-end system and contributed models and controllers
+ \item Developed user and service API authentication systems (OAuth, user/pass, etc.)
+ \item Implemented database watch daemon to push scheduled content for distribution
+ \item Written in Ruby on Rails (front end), Ruby (middle), Java/Spring (back end)
+ \item Finalist, Senior Design Competition
+ \end{itemize}
+\end{general}
 
 \begin{telecom}
  {\bf Object Recognition System,} ECES 436 Image Signal Processing \hfill Spring 2009 \\
@@ -330,6 +411,16 @@ Recognize objects using Fourier descriptors and minimum-distance classification
  \item Written in MATLAB
  \end{itemize}
 \end{telecom}
+% KEEP ^ v (mostly) IN SYNC. Want to show on _both_ tech and general
+\begin{general}
+ {\bf Image Recognition System,} ECES 436 Image Signal Processing \hfill Spring 2009 \\
+Recognize objects using Fourier descriptors and minimum-distance classification
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Compute image Fourier descriptors, representing coordinates as complex numbers
+ \item Reduce descriptors using low-pass filter to remove detail while retaining shape
+ \item Classify shape against stored templates using minimum-distance classification
+ \end{itemize}
+\end{general}
 
 \begin{telecom}
  {\bf Speaker Verification System,} ECES 435 Statistical Signal Processing \hfill Winter 2009 \\
@@ -372,6 +463,18 @@ A transparent network communications security service for multicast applications
 \item Written in C using open source best practices: OOP, automake, autoconf, gettext, Doxygen, gnulib, GNU command-line switches, signal handlers, daemonization
 \end{itemize}
 \end{tech}
+% KEEP ^ v IN SYNC. Want to show on _both_ tech and general
+\begin{general}
+{\bf Transparent Cryptography,} The ACIN Center \hfill Winter 2008 \\
+A transparent network communications security service for multicast applications
+\begin{itemize} \itemsep -2pt %reduce space between items
+\item Intercepted traffic in kernel-space, encrypt/decrypt as appropriate, and forward
+\item Used netfilter queue for packet filtering and mangling, and openssl's libcrypto
+\item Multicast addresses bound to particular crypto queues using iptables
+\item Written in C using open source best practices: OOP, automake, autoconf, gettext, Doxygen, gnulib, GNU command-line switches, signal handlers, daemonization
+\end{itemize}
+\end{general}
+
 
 %\begin{software}
 %{\bf Multitouch Interactive Table,} Drexel Smart House \hfill 2008 \\
