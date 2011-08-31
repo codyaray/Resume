@@ -7,14 +7,6 @@
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 
-\usepackage{comment} % Selectively include/excludes portions of text.
-\includecomment{software}  % Software Engineering
-\excludecomment{controls}  % Controls or Robotics Engineering
-\excludecomment{telecom}  % Telecommunications and Digital Signal Processing
-\includecomment{tech}        % Technology or Engineering (Category)
-\excludecomment{educate} % Educational Innovator
-\excludecomment{general}  % General Resume for connectors, executives, etc.
-
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
@@ -28,42 +20,18 @@
  
 \name{Cody A. Ray\\[12pt]} % the \\[12pt] adds a blank line after name
  
-\address{{\bf Present Address} \\ 4042 Powelton Avenue \#2 \\ Philadelphia, PA 19104  \\
+\address{{\bf Present Address} \\ 4157 N Clarendon Ave \#404 \\ Chicago, IL 60613  \\
         (215) 501-7891 }
 \address{{\bf Permanent Address} \\ 1726 Reyburn Creek Road \\ Malvern, AR 72104 \\
         (501) 337-8485 }
 
 \begin{resume} 
 
-% Objective section for all except general
-%\begin{software}
 %\section{Objective}
-%\end{software}
-\begin{controls}
-\section{Objective}
-\end{controls}
-\begin{telecom}
-\section{Objective}
-\end{telecom}
-\begin{educate}
-\section{Objective}
-\end{educate}
-
-%\begin{software}
 %Software Engineering
-%\end{software}
-
-\begin{controls}
-Controls or Robotics Engineering; Intelligent Systems
-\end{controls}
-
-\begin{telecom}
-Telecommunications or Network Engineer; Digital Signal Processing
-\end{telecom}
-
-\begin{educate}
-Educational Innovator
-\end{educate}
+%Controls or Robotics Engineering; Intelligent Systems
+%Telecommunications or Network Engineer; Digital Signal Processing
+%Educational Innovator
 
 \section{Education} 
 B.S./M.S. in Electrical Engineering, Drexel University, Philadelphia, PA, June 2011 \\
@@ -71,6 +39,18 @@ Undergraduate concentration in Telecommunications and Digital Signal Processing 
 Graduate concentration in Controls, Robotics, and Intelligent Systems, GPA 3.3 
 
 \section{Employment}
+ {\bf Software Engineer,} BrightTag, Chicago, IL \hfill August 2011 -- Present
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+  \item Develop new features and functionality using an agile process
+  \item Implement client- and server- side vendor integrations
+ \end{itemize}
+
+ {\bf Residential Teaching Assistant,} Northwestern University, IL \hfill Summer 2011
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+  \item Helped teach Honors, AP Computer Science to gifted 7-12th grade students
+  \item Planned and facilitated afternoon, evening, and weekend recreational activities 
+ \end{itemize}
+
  {\bf Research Assistant,} The ACIN Center, Camden, NJ \hfill 2007 -- 2009
  \begin{itemize} \itemsep -2pt  % reduce space between items
  \item Investigated agent system security issues and countermeasures 
@@ -78,11 +58,11 @@ Graduate concentration in Controls, Robotics, and Intelligent Systems, GPA 3.3
 \item Explored group-wise tactical edge networking using mDNS, SMF, XMPP 
  \end{itemize}
 
-{\bf Research Intern,} Agent Technology Center, Prague, Czech Republic \hfill  Fall 2008
-\begin{itemize} \itemsep -2pt %reduce space between items
-\item Developed MANET simulation engine for agent communications research
-\item Extended AGLOBE agent framework using MANET simulation engine 
-\end{itemize}
+%{\bf Research Intern,} Agent Technology Center, Prague, Czech Republic \hfill  Fall 2008
+%\begin{itemize} \itemsep -2pt %reduce space between items
+%\item Developed MANET simulation engine for agent communications research
+%\item Extended AGLOBE agent framework using MANET simulation engine 
+%\end{itemize}
 
 \section{Leadership  Activities} 
      {\bf President,} Drexel Smart House, Philadelphia, PA \hfill 2009 -- 2011 %\\
@@ -90,25 +70,25 @@ Graduate concentration in Controls, Robotics, and Intelligent Systems, GPA 3.3
      \begin{itemize} \itemsep -2pt
      \item Led renovation effort to transform historic home into ``living laboratory'' for student research and technology development 
      \item Established technology incubator in collaboration with faculty, staff, and industry
-     \item Created Seed Fund micro-grant for use-inspired student research (up to \$2,500)   
+%     \item Created Seed Fund micro-grant for use-inspired student research (up to \$2,500)   
      \item Awarded three Federal research grants totaling \$160,000
      \item Raised \$200,000 in financial and in-kind support for renovation
 	\item Spun-off two technology companies focused on sustainable, healthy living
-	\item Mentored for four years by Baiada Center for Entrepreneurship in Technology
+%	\item Mentored for four years by Baiada Center for Entrepreneurship in Technology
 	\end{itemize}
 
 	{\bf  Technology Director,}  Philly Startup Leaders, Philadelphia, PA \hfill 2010 -- 2011 
 	\begin{itemize} \itemsep -2pt
-	\item Managed information, communication technologies 
+%	\item Managed information, communication technologies 
 	\item Launched technology solutions for special initiatives, trained leaders 
-	\item Developed mailing list analytics tool for making data-driven decisions 
+%	\item Developed mailing list analytics tool for making data-driven decisions 
 	\end{itemize}
 
      {\bf Co-founder,} AIESEC at Drexel University, Philadelphia, PA \hfill 2010 
      \begin{itemize} \itemsep -2pt
      \item Established branch, global student-driven youth leadership development platform
-     \item Recruited the founding student members of AIESEC at Drexel University
-	\item Integrated the students into AIESEC Pennsylvania and the global network
+%     \item Recruited the founding student members of AIESEC at Drexel University
+%	\item Integrated the students into AIESEC Pennsylvania and the global network
 	\end{itemize}
 
 \section{Academic \\ Honors}
@@ -133,204 +113,114 @@ William Utzy Scholarship \\
    \begin{tabular}{l p{3in}}
     \underline{Languages:} & C, C++, Java, PHP, SQL, Python, Ruby \\
      \underline{Software:} & Apache, 
-\begin{software}
 CVS, Eclipse, Git, 
-\end{software}
 LabVIEW, \LaTeX, Maple, MATLAB, MS Office, MySQL, Oracle, 
-\begin{software}
 Pivotal Tracker, 
-\end{software}
 PostgreSQL,
-\begin{software}
 Subversion
-\end{software}
 \\
-\begin{software}
      \underline{Libraries:} & Ant, CodeIgniter, Cucumber, jUnit, Rails, RSpec \\
-\end{software}
-% KEEP ^ v IN SYNC. Want to show on _both_ software and general
-\begin{general}
-     \underline{Libraries:} & Ant, CodeIgniter, Cucumber, jUnit, Rails, RSpec \\
-\end{general}
      \underline{Systems:} & Linux (Debian, Red Hat), Mac OS X, Windows \\
-\begin{telecom}
      \underline{Research:} & Arduino, Function Generator, Pencilbox Logic \\ & Designer, Roomba, Spartan3 FPGA, TIMS
-\end{telecom}
-% KEEP ^ v IN SYNC. Want to show on _all_ telecom and controls and general
-\begin{controls}
-     \underline{Research:} & Arduino, Function Generator, Pencilbox Logic \\ & Designer, Roomba, Spartan3 FPGA, TIMS
-\end{controls}
-% KEEP ^ v IN SYNC. Want to show on _all_ telecom and controls and general
-\begin{general}
-     \underline{Research:} & Arduino, Function Generator, Pencilbox Logic \\ & Designer, Roomba, Spartan3 FPGA, TIMS
-\end{general}
-\begin{software}
-     \underline{Research:} & Arduino, Roomba, Spartan3 FPGA
-\end{software}
 \end{tabular}
 
-\begin{educate}
-\vspace{-3mm} \section{Service and Outreach}
-	\begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
-	\item Member, College of Engineering Dean Search Committee, 2010--Present
-	\item Member, Organizing Committee, Drexel University Earth Week Events, 2010
-	\item Member, Steering Committee, Community Alumni Network, 2009 -- 2010
-	\item Member, Organizing Committee, West Philadelphia Tree-Planting, 2009 -- 2010
-	\item Sustainability Advisor, Freedom's Way Foundation in Ivyland, PA, 2009 -- 2010
-	\item Member, Organizing Committee, Revitalization Project for the Morton McMichael Elementary School in Mantua, Philadelphia, Fall 2009
-	\item Mentoring Organization, Lindy Inner-City Public School Program, 2009
-	\item Contributor, Drexel Green Report \& Recommendations, 2009
-	\item Mentor, Science Leadership Academy high school ILP outreach program, 2008 
-	\end{list}
-\end{educate}
-% KEEP ^ v (mostly) IN SYNC. Want to show on _all_ telecom and controls and general
-\begin{general}
-\vspace{-3mm} \section{Service and Outreach}
-	\begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
-	\item Member, College of Engineering Dean Search Committee, 2010--Present
-	\item Sustainability Advisor, Freedom's Way Foundation in Ivyland, PA, 2009 -- 2010
-	\item Member, Organizing Committee, Revitalization Project for the Morton McMichael Elementary School in Mantua, Philadelphia, Fall 2009
-	\item Mentoring Organization, Lindy Inner-City Public School Program, 2009
-	\item Mentor, Science Leadership Academy high school ILP outreach program, 2008 
-	\end{list}
-\end{general}
+%\vspace{-3mm} \section{Service and Outreach}
+%	\begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
+%	\item Member, College of Engineering Dean Search Committee, 2010--Present
+%	\item Member, Organizing Committee, Drexel University Earth Week Events, 2010
+%	\item Member, Steering Committee, Community Alumni Network, 2009 -- 2010
+%	\item Member, Organizing Committee, West Philadelphia Tree-Planting, 2009 -- 2010
+%	\item Sustainability Advisor, Freedom's Way Foundation in Ivyland, PA, 2009 -- 2010
+%	\item Member, Organizing Committee, Revitalization Project for the Morton McMichael Elementary School in Mantua, Philadelphia, Fall 2009
+%	\item Mentoring Organization, Lindy Inner-City Public School Program, 2009
+%	\item Contributor, Drexel Green Report \& Recommendations, 2009
+%	\item Mentor, Science Leadership Academy high school ILP outreach program, 2008 
+%	\end{list}
+%
+%% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
+%\section{Communication \\ Skills}
+%   \begin{tabular}{l p{3in}}
+%    \underline{Speaking:} & \vspace{-3.5mm}
+%    \begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
+%	\item Panelist at Drexel U. Presidential Inauguration
+%	\item Moderator at World Green Energy Symposium
+%	\item Speaker in Environmental Lecture Series at the Arkansas School for Mathematics \& Sciences
+%	\item Lead VIP tours of Drexel Smart House to-be
+%	\end{list} \\\\
+%     \underline{Writing:} & Grant proposals to National Collegiate Inventors \& Innovators Alliance, Environmental Protection Agency, Clinton Global Initiative; Newsletters and Magazine Articles; Technical Reports 
+% \end{tabular}
+% 
+%%\section{Relevant \\ Courses}
+%%\begin{minipage}[t]{0.3\linewidth}
+%%Systems I / II / III \\
+%%Optimal Control \\
+%%Intelligent Control \\
+%%ST: Robotic Control
+%%\end{minipage}
+%%\begin{minipage}[t]{0.35\linewidth}
+%%Data Structures \& Algorithms I / II \\
+%%Artificial Intelligence (AI) \\
+%%Advanced AI \\
+%%Cognition \& Multitasking \\
+%%Database Theory
+%%\end{minipage}
+%%\begin{minipage}[t]{0.35\linewidth}
+%%Deterministic Signal Process \\
+%%Stochastic Signal Processing \\
+%%Speech \& Image Processing \\
+%%Wireless, Mobile, \& Cellular Communications
+%%\end{minipage}
+%
+%\section{Certifications}
+%Leadership in Energy and Environmental Design Accredited Professional (LEED AP)
+%
+%\section{Press and Publications}
+%\begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
+%\item Cody Ray, Kellie Houx, ``Drexel Smart House: Growing Strong'', Creative Outlook magazine, December 2009.
+%\item D. Denick, J. Detweiler, C. Ray, A. Cebulski, J. Bhatt, ``Library-Smart House Collaboration for Information Literacy Development,'' American Society for Engineering Education Conference, Engineering Libraries Division, Austin, TX, June 14-17, 2009
+%\end{list}
+%
+%\section{Media \\ Appearances}
+%\begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
+%\item Interview, Avril David, ``A Smart House Keeps on Learning,'' Forbes Corporate Social Responsibility (CSR) Blog, March 2011.
+%\item Interview, Avril David, ``A Smart House at Drexel University in Philadelphia is a Living Laboratory of Sustainability,'' Forbes CSR Blog, August 2010.
+%\item Interview, Chelsea Leposa, Jared Pass ``Drexel's green home technology experiment,'' Technically Philly, March 2010.
+%\item Interview, Tess Wittler, ``The Drexel Smart House: Designed for Progress,'' Keystone Builder, June 2009.
+%\end{list}
+%
+%\section{Presentations and Invited Talks}
+%\begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
+%\item Leaner Green Roof, National Sustainable Design Expo, Washington, DC, 2011
+%\item Technology and Innovation, Panel Moderator, World Green Energy Symposium, 2010 
+%\item Building Technology Research, University of Palmero Visiting Scholars, 2010 
+%\item Smart Homes and Future of Sustainability, Drexel Center for Graduate Studies, 2010 
+%\item Selective Near-Infrared Scattering Architectural Coatings, National Sustainable Design Expo, National Mall in Washington, DC, 2010 
+%\item Drexel Smart House Design Unveiling, Master of Ceremonies, Drexel University, 2009 
+%\item Renewable Energy, Panel Moderator, World Green Energy Symposium, 2009 
+%\item Student-Driven Sustainable Education: DSH Case Study, Environmental Lecture Series, Arkansas School for Math, Science \& Arts, 2009 
+%\item Information Literacy Development in Freshmen Engineers, American Society for Engineering Education Conference, Austin, TX, 2009 
+%
+%\item Applied Communications and Information Networking, Czech Technical University Agent Technology Center, 2008 
+%%\item Gradient Flow-Channel Routing, Conference on Computer, Information, Systems Sciences, and Engineering, 2006  % Invited but didn't attend
+%\end{list}
 
-\begin{educate}
-% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
-\section{Communication \\ Skills}
-   \begin{tabular}{l p{3in}}
-    \underline{Speaking:} & \vspace{-3.5mm}
-    \begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
-	\item Panelist at Drexel U. Presidential Inauguration
-	\item Moderator at World Green Energy Symposium
-	\item Speaker in Environmental Lecture Series at the Arkansas School for Mathematics \& Sciences
-	\item Lead VIP tours of Drexel Smart House to-be
-	\end{list} \\\\
-     \underline{Writing:} & Grant proposals to National Collegiate Inventors \& Innovators Alliance, Environmental Protection Agency, Clinton Global Initiative; Newsletters and Magazine Articles; Technical Reports 
- \end{tabular}
-\end{educate}
- 
-%\section{Relevant \\ Courses}
-%\begin{minipage}[t]{0.3\linewidth}
-%Systems I / II / III \\
-%Optimal Control \\
-%Intelligent Control \\
-%ST: Robotic Control
-%\end{minipage}
-%\begin{minipage}[t]{0.35\linewidth}
-%Data Structures \& Algorithms I / II \\
-%Artificial Intelligence (AI) \\
-%Advanced AI \\
-%Cognition \& Multitasking \\
-%Database Theory
-%\end{minipage}
-%\begin{minipage}[t]{0.35\linewidth}
-%Deterministic Signal Process \\
-%Stochastic Signal Processing \\
-%Speech \& Image Processing \\
-%Wireless, Mobile, \& Cellular Communications
-%\end{minipage}
-
-\begin{educate}
-\section{Certifications}
-Leadership in Energy and Environmental Design Accredited Professional (LEED AP)
-\end{educate}
-% KEEP ^ v IN SYNC. Want to show on _both_ educate and general
-\begin{general}
-\section{Certifications}
-Leadership in Energy and Environmental Design Accredited Professional (LEED AP)
-\end{general}
-
-\begin{educate}
-\section{Papers and Publications}
-\begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
-\item Cody Ray, Kellie Houx, ``Drexel Smart House: Growing Strong'', Creative Outlook magazine, December 2009.
-\item D. Denick, J. Detweiler, C. Ray, A. Cebulski, J. Bhatt, ``Library-Smart House Collaboration for Information Literacy Development,'' American Society for Engineering Education Conference, Engineering Libraries Division, Austin, TX, June 14-17, 2009
-\end{list}
-\end{educate}
-% KEEP ^ v (mostly) IN SYNC. Want to show on _both_ educate and general
-\begin{general}
-\section{Press and Publications}
-\begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
-\item Interviewed by Avril David, ``A Smart House at Drexel University in Philadelphia is a Living Laboratory of Sustainability,'' Forbes CSR Blog, August 2010.
-\item Cody Ray, Kellie Houx, ``Drexel Smart House: Growing Strong'', Creative Outlook magazine, December 2009.
-\item D. Denick, J. Detweiler, C. Ray, A. Cebulski, J. Bhatt, ``Library-Smart House Collaboration for Information Literacy Development,'' American Society for Engineering Education Conference, Engineering Libraries Division, Austin, TX, June 14-17, 2009
-\end{list}
-\end{general}
-
-\begin{educate}
-\section{Media \\ Appearances}
-\begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
-\item Interview, Avril David, ``A Smart House Keeps on Learning,'' Forbes Corporate Social Responsibility (CSR) Blog, March 2011.
-\item Interview, Avril David, ``A Smart House at Drexel University in Philadelphia is a Living Laboratory of Sustainability,'' Forbes CSR Blog, August 2010.
-\item Interview, Chelsea Leposa, Jared Pass ``Drexel's green home technology experiment,'' Technically Philly, March 2010.
-\item Interview, Tess Wittler, ``The Drexel Smart House: Designed for Progress,'' Keystone Builder, June 2009.
-\end{list}
-\end{educate}
-
-\begin{educate}
-\section{Presentations and Invited Talks}
-\begin{list}{\labelitemi}{\leftmargin=1em} \itemsep -2pt %reduce space between items
-\item Leaner Green Roof, National Sustainable Design Expo, Washington, DC, 2011
-\item Technology and Innovation, Panel Moderator, World Green Energy Symposium, 2010 
-\item Building Technology Research, University of Palmero Visiting Scholars, 2010 
-\item Smart Homes and Future of Sustainability, Drexel Center for Graduate Studies, 2010 
-\item Selective Near-Infrared Scattering Architectural Coatings, National Sustainable Design Expo, National Mall in Washington, DC, 2010 
-\item Drexel Smart House Design Unveiling, Master of Ceremonies, Drexel University, 2009 
-\item Renewable Energy, Panel Moderator, World Green Energy Symposium, 2009 
-\item Student-Driven Sustainable Education: DSH Case Study, Environmental Lecture Series, Arkansas School for Math, Science \& Arts, 2009 
-\item Information Literacy Development in Freshmen Engineers, American Society for Engineering Education Conference, Austin, TX, 2009 
-
-\item Applied Communications and Information Networking, Czech Technical University Agent Technology Center, 2008 
-%\item Gradient Flow-Channel Routing, Conference on Computer, Information, Systems Sciences, and Engineering, 2006  % Invited but didn't attend
-\end{list}
-\end{educate}
-
-\begin{tech}
 \section{Selected \\ Technical \\ Projects}
-\end{tech}
-% KEEP ^ v IN SYNC. Want to show on _both_ tech and general
-\begin{general}
-\section{Selected \\ Technical \\ Projects}
-\end{general}
 
-\begin{tech}
-\begin{controls}
 {\bf Robot Control,} ECES 690 ST: Robot Control \hfill Spring 2011 \\
 Model and Control DC-Driven Rotational-Prismatic (RP) Manipulator
 \begin{itemize} \itemsep -2pt %reduce space between items
 	\item Modeled RP manipulator in vertical plane including actuator dynamics
 	\item Verified dynamic robot model through MATLAB simulation 
 	\item Analyzed and compared seven control strategies for drawing task
-		\vspace{-2mm}
-		\begin{itemize} \itemsep -2pt %reduce space between items
-		\item Decentralized PID control in joint and operational spaces
-		\item Lyapunov control in joint and operational spaces
-		\item Globally linearizing control in joint and operational spaces
-		\item Adaptive control in joint space for three unknown parameters
-		\end{itemize} \vspace{-2mm}
+%		\vspace{-2mm}
+%		\begin{itemize} \itemsep -2pt %reduce space between items
+%		\item Decentralized PID control in joint and operational spaces
+%		\item Lyapunov control in joint and operational spaces
+%		\item Globally linearizing control in joint and operational spaces
+%		\item Adaptive control in joint space for three unknown parameters
+%		\end{itemize} \vspace{-2mm}
 \end{itemize}
-\end{controls}
-\end{tech}
-% KEEP ^ v IN SYNC. Want to show on _both_ tech and general
-\begin{general}
-{\bf Robot Control,} ECES 690 ST: Robot Control \hfill Spring 2011 \\
-Model and Control DC-Driven Rotational-Prismatic (RP) Manipulator
-\begin{itemize} \itemsep -2pt %reduce space between items
-	\item Modeled RP manipulator in vertical plane including actuator dynamics
-	\item Verified dynamic robot model through MATLAB simulation 
-	\item Analyzed and compared seven control strategies for drawing task
-		\vspace{-2mm}
-		\begin{itemize} \itemsep -2pt %reduce space between items
-		\item Decentralized PID control in joint and operational spaces
-		\item Lyapunov control in joint and operational spaces
-		\item Globally linearizing control in joint and operational spaces
-		\item Adaptive control in joint space for three unknown parameters
-		\end{itemize} \vspace{-2mm}
-\end{itemize}
-\end{general}
 
-\begin{tech}
 {\bf Robot WiFi Localization,} CS 610 Advanced Artificial Intelligence \hfill Winter 2011 \\
 Localize mobile robot using RSSI information from fixed routers in LOS environment
 \begin{itemize} \itemsep -2pt %reduce space between items
@@ -339,21 +229,17 @@ Localize mobile robot using RSSI information from fixed routers in LOS environme
 \item Fused the odometry measurements and ML RSSI estimates using Kalman filtering
 \item Used a mixture of MATLAB, SQL (MySQL), shell scripting, awk, and gnuplot.
 \end{itemize}
-\end{tech}
 
-\begin{controls}
-{\bf Smart Home Optimal Control,} CS 510 Artificial Intelligence \hfill Fall 2011 \\
-Heuristically Enhanced Optimal Control for Smart Homes
-\begin{itemize} \itemsep -2pt %reduce space between items
-\item Defined metrics for occupant well-being and environmental footprint 
-\item Modeled smart home as resource-constrained optimal control problem 
-\item Mapped optimal control to graph search for partially-exhaustive search 
-\item Developed domain heuristics to reduce search space, computational complexity 
-\item Evaluated smart home control scheme in simulation environment
-\end{itemize}
-\end{controls}
+%{\bf Smart Home Optimal Control,} CS 510 Artificial Intelligence \hfill Fall 2011 \\
+%Heuristically Enhanced Optimal Control for Smart Homes
+%\begin{itemize} \itemsep -2pt %reduce space between items
+%\item Defined metrics for occupant well-being and environmental footprint 
+%\item Modeled smart home as resource-constrained optimal control problem 
+%\item Mapped optimal control to graph search for partially-exhaustive search 
+%\item Developed domain heuristics to reduce search space, computational complexity 
+%\item Evaluated smart home control scheme in simulation environment
+%\end{itemize}
 
-\begin{software}
 {\bf Command-Line Kalah,} CS 510 Artificial Intelligence \hfill  Fall 2010 \\
 Play Kalah against the computer or pit different AI algorithms against one another
 \begin{itemize} \itemsep -2pt %reduce space between items
@@ -361,41 +247,15 @@ Play Kalah against the computer or pit different AI algorithms against one anoth
 \item Implemented random, minimax, and alpha-beta pruning AI players 
 \item Written in Ruby with functional tests in RSpec and Cucumber
 \end{itemize}
-\end{software}
-% KEEP ^ v IN SYNC. Want to show on _both_ software and controls
-\begin{controls}
-{\bf Command-Line Kalah,} CS 510 Artificial Intelligence \hfill  Fall 2010 \\
-Play Kalah against the computer or pit different AI algorithms against one another
-\begin{itemize} \itemsep -2pt %reduce space between items
-\item Developed two-player turn-based zero-sum game engine
-\item Implemented random, minimax, and alpha-beta pruning AI players 
-\item Written in Ruby with functional tests in RSpec and Cucumber
-\end{itemize}
-\end{controls}
 
-\begin{software}
 {\bf Mailalytics,} Philly Startup Leaders \hfill  Summer 2010 \\
 Mailing list analytics tool to statistically gauge member engagement
 \begin{itemize} \itemsep -2pt %reduce space between items
 \item Extracted per member, message frequency, and email thread length statistics
-\item Qualitatively interpret activity as announcements or sharing versus discussions, quality of conversation, and regularly active membership
+\item Qualitatively interpret activity as announcements versus discussions%, quality of conversation, and regularly active membership
 \item Written as a Ruby library and set of command-line scripts
 \end{itemize}
-\end{software}
-%
-%\begin{software}
-% {\bf Mashbot Campaign Manager,} Computer Science Senior Design \hfill 2009 \\
-%Extensible online social media marketing campaign manager for small businesses
-% \begin{itemize} \itemsep -2pt  % reduce space between items
-% \item Architected front-end system and contributed models and controllers
-% \item Developed user and service API authentication systems (OAuth, user/pass, etc.)
-% \item Implemented database watch daemon to push scheduled content for distribution
-% \item Written in Ruby on Rails (front end), Ruby (middle), Java/Spring (back end)
-% \item Finalist, Senior Design Competition
-% \end{itemize}
-%\end{software}
-% KEEP ^ v IN SYNC. Want to show on _both_ software and general
-\begin{general}
+
  {\bf Mashbot Campaign Manager,} Computer Science Senior Design \hfill 2009 \\
 Extensible online social media marketing campaign manager for small businesses
  \begin{itemize} \itemsep -2pt  % reduce space between items
@@ -405,50 +265,32 @@ Extensible online social media marketing campaign manager for small businesses
  \item Written in Ruby on Rails (front end), Ruby (middle), Java/Spring (back end)
  \item Finalist, Senior Design Competition
  \end{itemize}
-\end{general}
 
-\begin{telecom}
- {\bf Object Recognition System,} ECES 436 Image Signal Processing \hfill Spring 2009 \\
-Recognize objects using Fourier descriptors and minimum-distance classification
- \begin{itemize} \itemsep -2pt  % reduce space between items
- \item Compute image Fourier descriptors, representing coordinates as complex numbers
- \item Reduce descriptors using low-pass filter to remove detail while retaining shape
- \item Classify shape against stored templates using minimum-distance classification
- \item Written in MATLAB
- \end{itemize}
-\end{telecom}
-% KEEP ^ v (mostly) IN SYNC. Want to show on _both_ tech and general
-\begin{general}
- {\bf Image Recognition System,} ECES 436 Image Signal Processing \hfill Spring 2009 \\
-Recognize objects using Fourier descriptors and minimum-distance classification
- \begin{itemize} \itemsep -2pt  % reduce space between items
- \item Compute image Fourier descriptors, representing coordinates as complex numbers
- \item Reduce descriptors using low-pass filter to remove detail while retaining shape
- \item Classify shape against stored templates using minimum-distance classification
- \end{itemize}
-\end{general}
+% {\bf Object Recognition System,} ECES 436 Image Signal Processing \hfill Spring 2009 \\
+%Recognize objects using Fourier descriptors and minimum-distance classification
+% \begin{itemize} \itemsep -2pt  % reduce space between items
+% \item Compute image Fourier descriptors, representing coordinates as complex numbers
+% \item Reduce descriptors using low-pass filter to remove detail while retaining shape
+% \item Classify shape against stored templates using minimum-distance classification
+% \item Written in MATLAB
+% \end{itemize}
 
-\begin{telecom}
- {\bf Speaker Verification System,} ECES 435 Statistical Signal Processing \hfill Winter 2009 \\
-Text-Independent Speaker Verification tested with 8 speakers (4 male, 4 female)
- \begin{itemize} \itemsep -2pt  % reduce space between items
- \item Extract Mel-Frequency Cepstral Coefficients (MFCC) as feature vector
- \item Compare minimum-distance and Gaussian Mixture Model classifiers
- \item Written in MATLAB using TIMIT speaker database for testing
- \end{itemize}
-\end{telecom}
+% {\bf Speaker Verification System,} ECES 435 Statistical Signal Processing \hfill Winter 2009 \\
+%Text-Independent Speaker Verification tested with 8 speakers (4 male, 4 female)
+% \begin{itemize} \itemsep -2pt  % reduce space between items
+% \item Extract Mel-Frequency Cepstral Coefficients (MFCC) as feature vector
+% \item Compare minimum-distance and Gaussian Mixture Model classifiers
+% \item Written in MATLAB using TIMIT speaker database for testing
+% \end{itemize}
 
-\begin{telecom}
- {\bf Audio Steganography,} ECES 434 Deterministic Signal Processing \hfill Fall 2009 \\
-A study of audio steganography with emphasis on psychoacoustic approaches
- \begin{itemize} \itemsep -2pt  % reduce space between items
- \item Hide text-based message in audio without distortion as perceived by human ear
- \item Compare least-significant bit method, time-domain amplitude modulation, and MPEG-1 psychoacoustic frequency masking 
- \item Written in MATLAB using TIMIT speaker database
- \end{itemize}
-\end{telecom}
+% {\bf Audio Steganography,} ECES 434 Deterministic Signal Processing \hfill Fall 2009 \\
+%A study of audio steganography with emphasis on psychoacoustic approaches
+% \begin{itemize} \itemsep -2pt  % reduce space between items
+% \item Hide text-based message in audio without distortion as perceived by human ear
+% \item Compare least-significant bit method, time-domain amplitude modulation, and MPEG-1 psychoacoustic frequency masking 
+% \item Written in MATLAB using TIMIT speaker database
+% \end{itemize}
 
-\begin{tech}
 {\bf WAMAS,} Agent Technology Center, Czech Technical University \hfill Fall 2008 \\
 Provide agent simulators with facilities for approximating wireless communications
 \begin{itemize} \itemsep -2pt %reduce space between items
@@ -457,30 +299,15 @@ Provide agent simulators with facilities for approximating wireless communicatio
 \item Integrated into AGLOBE framework as alternative to perfect/no communications
 \item Written in Java using Eclipse and CVS
 \end{itemize}
-\end{tech}
 
-\begin{tech}
 {\bf Transparent Cryptography,} The ACIN Center \hfill Winter 2008 \\
 A transparent network communications security service for multicast applications
 \begin{itemize} \itemsep -2pt %reduce space between items
 \item Intercepted traffic in kernel-space, encrypt/decrypt as appropriate, and forward
 \item Used netfilter queue for packet filtering and mangling, and openssl's libcrypto
 \item Multicast addresses bound to particular crypto queues using iptables
-\item Written in C using open source best practices: OOP, automake, autoconf, gettext, Doxygen, gnulib, GNU command-line switches, signal handlers, daemonization
+\item Written in C using open source best practices%: OOP, automake, autoconf, gettext, Doxygen, gnulib, GNU command-line switches, signal handlers, daemonization
 \end{itemize}
-\end{tech}
-% KEEP ^ v IN SYNC. Want to show on _both_ tech and general
-\begin{general}
-{\bf Transparent Cryptography,} The ACIN Center \hfill Winter 2008 \\
-A transparent network communications security service for multicast applications
-\begin{itemize} \itemsep -2pt %reduce space between items
-\item Intercepted traffic in kernel-space, encrypt/decrypt as appropriate, and forward
-\item Used netfilter queue for packet filtering and mangling, and openssl's libcrypto
-\item Multicast addresses bound to particular crypto queues using iptables
-\item Written in C using open source best practices: OOP, automake, autoconf, gettext, Doxygen, gnulib, GNU command-line switches, signal handlers, daemonization
-\end{itemize}
-\end{general}
-
 
 %\begin{software}
 %{\bf Multitouch Interactive Table,} Drexel Smart House \hfill 2008 \\
@@ -495,7 +322,6 @@ A transparent network communications security service for multicast applications
 %\end{itemize}
 %\end{software}
 
-%\begin{telecom}
 {\bf Ad-Hoc Routing Protocol,} Arkansas School for Mathematics and Sciences \hfill 2006 \\
 Gradient Flow-Channel Routing with Persistent Messaging
 \begin{itemize} \itemsep -2pt %reduce space between items
@@ -503,11 +329,7 @@ Gradient Flow-Channel Routing with Persistent Messaging
 \item Finalist, Arkansas Regional Science Fair Competition
 \item Accepted for presentation at the 2006 Conference on Computer, Information, Systems Sciences, and Engineering
 \end{itemize}
-%\end{telecom}
 
 \end{resume} 
 
 \end{document} 
-
-
-
