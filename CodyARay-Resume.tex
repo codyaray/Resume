@@ -17,11 +17,10 @@
 \usepackage[colorlinks=true, urlcolor=black]{hyperref}
 
 \begin{document} 
- 
+
 \name{Cody A. Ray\\[12pt]} % the \\[12pt] adds a blank line after name
  
-\address{311 Marengo Ave. \#2 \\ Forest Park, IL 60130  \\
-        (215) 501-7891 }
+\rhead{(215) 501-7891 \\ talktome@codyaray.com}
 
 \begin{resume} 
 
@@ -34,30 +33,33 @@
 \section{Education} 
 B.S./M.S. in Electrical Engineering, Drexel University, Philadelphia, PA, June 2011 \\
 Undergraduate concentration in Telecommunications and Digital Signal Processing \\
-Graduate concentration in Controls, Robotics, and Intelligent Systems, GPA 3.3 
+Graduate concentration in Controls, Robotics, and Intelligent Systems 
 
 \section{Employment}
-{\bf Software Engineer,} Confluent, Inc, Mountain View, CA \hfill Feb 2019 - Present
+{\bf Sr. Software Engineer,} Confluent, Inc, Mountain View, CA \hfill Feb 2019 - Present
 \begin{itemize} \itemsep -2pt  % reduce space between items
-  \item Tech lead for API/CLI team of 4 eng; oversee product experience \& architecture
-  \item Creating a new public API for Confluent Cloud and modernizing on-prem APIs
-  \item Designed, developed, and launched Confluent Cloud CLI
-  \item Layed groundwork for unified confluent CLI experience (cloud, k8s, data centers)
+  \item Chair the ``API Council", coordinating across 10+ product teams
+  \item Tech Lead for API and CLI teams; oversee product experience \& architecture
+  \item DRI for ``Independent Deployments" initiative, enabling high-velocity eng teams
+  %\item Creating a new public API for Confluent Cloud and modernizing on-prem APIs
+  \item Launching 6 APIs: 3 are GA--Metrics, REST Proxy v3, Partners, and 3 WIP--Cloud, Notifications, RBAC
+  \item Driving vision for unified Confluent API/CLI experience (cloud, k8s, on-prem)
+  \item Designed, launched, and drove Confluent Cloud CLI to 1000+ weekly users 
   \item Drove the adoption and implementation of feature flags / dynamic configuration
+  \item Consult on cloud security related matters (OAuth, API Keys, CSRF, Limits, etc)
  \end{itemize}
 
-{\bf Site Reliability Engineer,} Confluent, Inc, Palo Alto, CA \hfill Oct 2017 -- Feb 2019
+{\bf Sr. Site Reliability Engineer,} Confluent, Inc, Palo Alto, CA \hfill Oct 2017 -- Feb 2019
 \begin{itemize} \itemsep -2pt  % reduce space between items
-  \item Architected and lead development of hosted Schema Registry and Connect S3
-  \item Built large pieces of our global cross-cloud/cross-k8s scheduling system
+  \item Architected and lead development for hosted Schema Registry and Connect S3
+  \item Built global cross-cloud/cross-k8s scheduling system for Confluent Platform
   \item Championed Confluent's cloud-first transition to biweekly releases across all teams
   \item Bootstrapped the end-to-end system testing framework for Confluent Cloud
   \item Created our initial watchdog alerting system for end-to-end problem detection
   \item Worked with compliance, infosec, product teams to setup cloud on-call rotations
  \end{itemize}
 
-
-{\bf Dev-Ops Engineer,} PEAK6 Investments, Chicago, IL \hfill Oct 2015 -- Oct 2017
+{\bf Lead Dev-Ops Engineer,} PEAK6 Investments, Chicago, IL \hfill Oct 2015 -- Oct 2017
 \begin{itemize} \itemsep -2pt  % reduce space between items
   \item Designed, operated Elasticearch/Logstash/Kibana stack with 500GB daily ingest
   \item Developed HA Centralized Scheduling system built on StackStorm cluster
@@ -70,7 +72,7 @@ Graduate concentration in Controls, Robotics, and Intelligent Systems, GPA 3.3
 \begin{itemize} \itemsep -2pt  % reduce space between items
   \item Built a scalable distributed stats infrastructure with Suro/Kafka/KairosDB
   \item Created and open sourced \href{https://github.com/brighttag/agathon}{Agathon}, a Cassandra cluster management tool
-  \item Developed dependency-based haproxy configuration management system
+  \item Developed a custom haproxy-based service mesh (before the concept existed)
   \item Automated security group mgmt, mongo migrations, polyglot build/deploy
   \item (Soon) Open sourced Infrastructure Manifest svc for OpenStack, Rackspace, AWS
   \item Built an internal reporting app for client services' use
@@ -80,11 +82,11 @@ Graduate concentration in Controls, Robotics, and Intelligent Systems, GPA 3.3
 
  {\bf Software Engineer,} Signal Digital, Chicago, IL \hfill Aug 2011 -- July 2013
  \begin{itemize} \itemsep -2pt  % reduce space between items
+  \item Integrated 15+ server-direct real-time data collection partners with Apache Camel
+  \item Helped launch 5 APIs: OAuth, Provisioning, Stats, Search-by-Markup, SSO
   \item Lead the development of iOS and Android mobile SDKs
   \item Developed cross-domain javascript privacy module embedded in 200+ sites
   \item Created store-and-forward proxy to integrate real-time and batch systems
-  \item Helped launch 5 APIs: OAuth, Provisioning, Stats, Search-by-Markup, SSO
-  \item Integrated 15+ partners for server-direct real-time data collection
   \item Designed and built queuing and pubsub systems on Redis, replacing RabbitMQ
 %  \item Integrated asynchronous HTTP client in Camel, replacing Apache HttpClient
  \end{itemize}
@@ -143,9 +145,19 @@ Graduate concentration in Controls, Robotics, and Intelligent Systems, GPA 3.3
    \begin{tabular}{l p{3in}}
     \underline{Languages:} & % C, C++, 
     Golang, Python, Java, Node.js, Ruby, PHP \\
-    \underline{Datastores:} & Kafka, Cassandra, Elasticsearch, KairosDB, Mongo, %MS SQL,
-    MySQL, 
-    PostgreSQL,
+    \underline{Technologies:} & Kubernetes, 
+    Terraform,
+    GRPC,
+    OpenAPI,
+    Kafka,
+    SQL,
+    Cassandra,
+    Elasticsearch,
+    %KairosDB,
+    Mongo,
+    %MS SQL,
+    %MySQL, 
+    %PostgreSQL,
     Redis \\
 %     \underline{Software:} & Apache,
 % Eclipse,
@@ -179,7 +191,7 @@ Heroku \\
 % OpenStack
 %Rackspace \\
 %\underline{Containers:} & Chronos, Docker, Mesos, Packer, Vagrant 
-\underline{Specialty:} & Scalable distributed systems architecture
+\underline{Specialties:} & Scalable distributed systems, cloud architecture
 \end{tabular}
 
 %\section{Academic \\ Honors}
