@@ -1,12 +1,10 @@
-% LaTeX file for resume -- Fractional CTO / Engineering Leadership variant
+% LaTeX file for resume -- Technical Advisor / Cloud Platform Strategy variant
 % This file uses the resume document class (res.cls)
-% Shared content lives in resume-body.tex; see also CodyARay-Resume-Advisor.tex
+% Shared content lives in resume-body.tex; see also CodyARay-Resume.tex
 
 \documentclass[margin]{res}
 % the margin option causes section titles to appear to the left of body text
 \textwidth=5.2in % increase textwidth to get smaller right margin
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -20,6 +18,9 @@
 \rfoot{\href{http://github.com/codyaray}{Code samples: github.com/codyaray}}
 
 \usepackage[colorlinks=true, urlcolor=black]{hyperref}
+
+\newif\ifAdvisorVariant
+\AdvisorVarianttrue
 
 \begin{document}
 

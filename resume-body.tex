@@ -1,0 +1,148 @@
+% Shared résumé content, included by CodyARay-Resume.tex (fractional CTO / engineering
+% leadership variant) and CodyARay-Resume-Advisor.tex (technical advisor / cloud platform
+% strategy variant). The wrapper files define \AdvisorVariant{true,false} before \input'ing
+% this file; everything else (facts, employment history, education) is shared.
+\makeatletter
+\@ifundefined{ifAdvisorVariant}{\newif\ifAdvisorVariant\AdvisorVariantfalse}{}
+\makeatother
+
+\ifAdvisorVariant
+  \name{Cody A. Ray\\[2pt]{\normalsize\normalfont Cloud Platform Strategy \& Technical Advisor --- Distributed Systems at Scale}\\[10pt]}
+\else
+  \name{Cody A. Ray\\[2pt]{\normalsize\normalfont Engineering Executive \& Technical Advisor --- Fractional CTO / Head of Engineering}\\[10pt]}
+\fi
+
+\rhead{Remote \\ (215) 501-7891 \\ talktome@codyaray.com}
+
+\begin{resume}
+
+\section{Executive \\ Profile}
+Helped grow Confluent Cloud as one of its first engineers, spending eight years building it
+from a venture bet into the core revenue engine for Confluent's IPO and subsequent IBM acquisition.
+Progressed from Confluent Cloud founding engineer to Principal Engineer and Director of Engineering,
+focused on the global multi-cloud control plane for our data infrastructure product. Championed
+developer tooling for our customers (such as public APIs, CLI, Terraform, and hybrid support for on-prem and cloud),
+and a ``fixed cost'' platform philosophy --- building frameworks so product teams absorb
+standard integrations (API, RBAC, audit logs, auth, DB, etc) once, not for every service.
+\ifAdvisorVariant
+Available for technical advisory retainers and architecture/scaling engagements with venture-backed
+and growth-stage technology companies.
+\else
+Available for fractional CTO, fractional Head of Engineering, and technical advisory engagements
+with venture-backed and growth-stage technology companies.
+\fi
+
+\section{Advisory \\ Focus}
+\ifAdvisorVariant
+   \begin{tabular}{l p{3.5in}}
+    \underline{Platform \& Cloud:} & Cloud/SaaS evolution, multi-cloud/Kubernetes infrastructure, avoiding architectural dead ends \\
+    \underline{Reliability:} & Availability, incident response, operability, and cost efficiency at scale \\
+    \underline{Dev Velocity:} & Platform engineering, internal developer platforms, API/CLI/Terraform strategy, engineering effectiveness \\
+    \underline{Exec Support:} & Technical judgment on architecture and scaling decisions for founders, CTOs, boards, and investors \\
+    \underline{Org \& Leadership:} & Engineering org design, the platform/product boundary, and developing senior technical leaders
+   \end{tabular}
+\else
+   \begin{tabular}{l p{3.5in}}
+    \underline{Org \& Leadership:} & Engineering org design, the platform/product boundary, and developing senior technical leaders \\
+    \underline{Exec Support:} & Technical judgment on architecture and scaling decisions for founders, CTOs, boards, and investors \\
+    \underline{Dev Velocity:} & Platform engineering, internal developer platforms, API/CLI/Terraform strategy, engineering effectiveness \\
+    \underline{Platform \& Cloud:} & Cloud/SaaS evolution, multi-cloud/Kubernetes infrastructure, avoiding architectural dead ends \\
+    \underline{Reliability:} & Availability, incident response, operability, and cost efficiency at scale
+   \end{tabular}
+\fi
+
+\section{Experience}
+
+{\bf Engineering Leader,} Confluent, Inc. \hfill Aug 2021 -- May 2026 \\
+{\bf Director of Engineering, Principal Engineer}
+\nopagebreak[4]
+\begin{itemize} \itemsep -2pt  % reduce space between items
+  \item Partnered with 800+ engineers company-wide to surface cross-team gaps and
+        enable teams to move faster while continuing to hit our quality bars
+  \item Transformed a distressed team into one of Confluent's most respected engineering teams,
+        managing 15 people and serving as tech lead for a 45-person organization
+  \item Bootstrapped 3 teams to address identified product and platform gaps
+        (CLI/Terraform, API Foundations, Service Foundations); launched the initial offering, 
+        developed tech leads and a successor manager, moved to the next gap
+  \item Championed the Application Developer Platform to provide engineers with paved paths
+        to meet Confluent's quality, security, reliability, operational, and product standards.
+        Includes service runtime frameworks in Golang and Java with integrated first-class
+        testing capabilities. These power 100+ services company-wide, all new control
+        plane services and several legacy 2017--2019 era microservices.
+  \item Consolidated Confluent Cloud's pre-production footprint from 143 regions to 23 --- saving 
+        \$1M/year in infra costs and streamlining cross-team integration testing
+  \item Mentored staff+ leads driving critical initiatives, such as service mesh, feature flags,
+        and workflow orchestration for highly regulated environments (FedRAMP)
+  \item Taught workshops to principal engineers, all-eng-managers, and all-engineering on eng values,
+        eng management, platform integrations, AI for eng productivity
+ \end{itemize}
+
+{\bf Founding Engineer, Confluent Cloud,} Confluent, Inc. \hfill Oct 2017 -- Aug 2021
+\nopagebreak[4]
+\begin{itemize} \itemsep -2pt  % reduce space between items
+  \item Delivered Confluent Cloud's first non-Kafka product (hosted Schema Registry) and first
+        cloud connector (Connect S3), leading the company's Cloud First pivot. Shaped the underlying
+        global cross-cloud/cross-Kubernetes scheduling system underpinning its control plane
+  \item Grew the Confluent CLI to 1,000+ weekly users and 20+ public APIs, unblocking significant 
+        revenue tied to new features for both Confluent Cloud and self-managed users via a hybrid CLI
+  \item Kept Confluent Cloud on its SLA targets first by developing a standardized monolithic release
+        and end-to-end testing processes (after months-long forced release halts), and later rebuilt
+        these processes to support safe independent deployments per team. This required untangling
+        a messy ``distributed monolith'' DB architecture, strengthening (or providing) internal APIs,
+        and providing a full-pyramid style testing approach for hundreds of services
+  \item Accelerated API delivery from 4 products in 5 years to 5+ every 6 months. Established and chaired
+        the ``API Council'' across 8+ teams, 200+ engineers. Cut API-spec dev time 80--90\%
+        via custom OpenAPI tooling, while consolidating authentication from 5+ mechanisms to 2.
+ \end{itemize}
+
+{\bf Lead Dev-Ops Engineer,} PEAK6 Investments, Chicago, IL \hfill Oct 2015 -- Oct 2017
+\nopagebreak[4]
+\begin{itemize} \itemsep -2pt  % reduce space between items
+  \item Built observability platforms (ELK ingesting 500GB/day, Graphite/Grafana, StackStorm) for
+        firm-wide trading systems; led DevOps tooling rollout (ChatOps, GitHub Enterprise consolidation)
+ \end{itemize}
+
+{\bf Founding Engineer,} Signal Digital (BrightTag), Chicago, IL \hfill Aug 2011 -- Aug 2015 \\
+{\bf Acquired by TransUnion (2020) }
+\nopagebreak[4]
+\begin{itemize} \itemsep -2pt  % reduce space between items
+  \item Built the core framework for server-side data integrations, our first unique differentiator.
+        This replaced browser-based ``ad pixels'' for partner data sharing, which slowed websites, causing
+        customer churn and security concerns. Onboarded the first 20+ partners and mentored team to support
+        100s of partners
+  \item Built the iOS and Android SDKs, shipped a cookie-consent banner across 200+ EU sites for major global brands 
+  \item Developed a Puppet/HAProxy service mesh (before the concept existed), open sourced a global multi-cluster Cassandra
+        management platform (Agathon), and led a time-series stats pipeline (Mongo, Storm/Python, KairosDB, Elastic)
+  \item Operated RabbitMQ, Redis, and Kafka at scale (50k+ QPS), including app-side integrations and custom monitoring tools
+ \end{itemize}
+
+\section{Additional \\ Experience}
+
+{\bf General Partner,} Warray Ventures LLC, Chicagoland, IL \hfill 2021 -- Present
+\nopagebreak[4]
+\begin{itemize} \itemsep -2pt
+  \item Co-own a 100+ unit portfolio across 10 buildings; raised syndication capital
+        to turn around a vacant, condemned building; fully stabilized in 12 months
+\end{itemize}
+
+{\bf Interim CTO / Technical Advisor,} TickPredict \hfill 2017 -- 2018
+\nopagebreak[4]
+\begin{itemize} \itemsep -2pt
+  \item Advised an early-stage crypto startup on technical strategy and architecture
+\end{itemize}
+
+{\bf CEO,} BookMore Systems (formerly Buka Fitness) \hfill 2015 -- 2017
+\nopagebreak[4]
+\begin{itemize} \itemsep -2pt
+  \item Co-owned and operated a vertical SaaS business for independent fitness studios
+\end{itemize}
+
+\section{Education \& \\ Technical Depth}
+   \begin{tabular}{l p{3.3in}}
+    \underline{Education:} & B.S./M.S. Electrical Engineering, Drexel University, 2011 \\
+    \underline{Distributed Systems:} & Kafka, gRPC, Cassandra, Elasticsearch, Redis, MongoDB \\
+    \underline{Cloud \& Infra:} & AWS, GCP, Kubernetes, Terraform, OpenAPI \\
+    \underline{Languages:} & Go, Python, Java, Node.js, Ruby
+   \end{tabular}
+
+\end{resume}
